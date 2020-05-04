@@ -1,4 +1,4 @@
-package ro.example.android.main
+package ro.example.android.articles
 
 data class Article(
     val id: Int,

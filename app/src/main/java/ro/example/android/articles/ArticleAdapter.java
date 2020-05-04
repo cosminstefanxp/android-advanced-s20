@@ -1,4 +1,4 @@
-package ro.example.android.main;
+package ro.example.android.articles;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +13,7 @@ import java.util.List;
 import ro.example.android.R;
 import timber.log.Timber;
 
-public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class ArticleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static final int VIEW_TYPE_RED = 0;
     private static final int VIEW_TYPE_WHITE = 1;

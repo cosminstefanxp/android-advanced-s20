@@ -1,27 +1,28 @@
-package ro.example.android.main;
+package ro.example.android.articles;
 
 import android.os.Bundle;
 
+import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import ro.example.android.R;
 import ro.example.android.core.BaseActivity;
-import ro.example.android.databinding.ActivityMainBinding;
+import ro.example.android.databinding.ActivityArticlesBinding;
 
-public class MainActivity extends BaseActivity {
+public class ArticleListActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_articles);
 
-        ActivityMainBinding viewBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        ActivityArticlesBinding viewBinding = DataBindingUtil.setContentView(this, R.layout.activity_articles);
 
         RecyclerView recyclerView = viewBinding.recyclerView;
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        MainAdapter adapter = new MainAdapter();
+        ArticleAdapter adapter = new ArticleAdapter();
         recyclerView.setAdapter(adapter);
         adapter.setArticles(ArticleKt.getTestArticles());
     }
