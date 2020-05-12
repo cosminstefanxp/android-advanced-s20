@@ -65,16 +65,20 @@ dependencies {
 //    kapt "androidx.room:room-compiler:$roomVersion"
 
     // Networking: OkHttp
-//    implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
-//    implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+    implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
 
     // Networking: Retrofit
-//    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
-//    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
-//    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
 
     // Serialization: GSON
-//    implementation "com.google.code.gson:gson:$gsonVersion"
+    implementation "com.google.code.gson:gson:$gsonVersion"
+
+    // Threading: RxJava
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
 
     // Image Loading: Picasso
     implementation "com.squareup.picasso:picasso:$picassoVersion"
