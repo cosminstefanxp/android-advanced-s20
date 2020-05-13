@@ -41,7 +41,7 @@ public class NewsWebService {
     }
 
 
-    public Single<List<Article>> fetchEverything(String query) {
+    public Single<List<ArticleDto>> fetchEverything(String query) {
         return api.fetchEverything(API_KEY, query)
                 .map(articlesResponse -> articlesResponse.articles);
     }
